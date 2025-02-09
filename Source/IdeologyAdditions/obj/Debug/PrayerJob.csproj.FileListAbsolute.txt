@@ -1,0 +1,7 @@
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Assemblies/PrayerJob.dll
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Assemblies/PrayerJob.pdb
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Source/PrayerJob/obj/Debug/PrayerJob.csproj.AssemblyReference.cache
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Source/PrayerJob/obj/Debug/PrayerJob.csproj.CoreCompileInputs.cache
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Source/PrayerJob/obj/Debug/PrayerJob.dll
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Source/PrayerJob/obj/Debug/PrayerJob.pdb
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/PrayerJob/Source/PrayerJob/obj/Debug/PrayerJob.csproj.CopyComplete

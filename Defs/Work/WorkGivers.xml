@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkGiverDef>
+    <defName>IdeologyAdditions_Pray</defName>
+    <label>begin a prayer</label>
+    <giverClass>IdeologyAdditions.WorkGiver_Praying_Pray</giverClass>
+    <workType>IdeologyAdditions_Praying</workType>
+    <verb>pray</verb>
+    <gerund>praying</gerund>
+    <priorityInType>100</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Talking</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

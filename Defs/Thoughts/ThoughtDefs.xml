@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>IdeologyAdditions_ActivePrayerCaster</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>IdeologyAdditions.ThoughtWorker_ActivePrayerCaster</workerClass>
+    <stages>
+      <li>
+        <label>praying for someone</label>
+        <description>I am engaging in payer.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>IdeologyAdditions_ActivePrayer</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>was prayed for</label>
+        <description>I was prayed for.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

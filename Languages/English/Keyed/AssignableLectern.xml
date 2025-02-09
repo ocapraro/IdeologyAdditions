@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<!-- CompAssignableLectern -->
+<AssignableLectern_Pray>pray</AssignableLectern_Pray>
+<AssignableLectern_NoOneAssigned>no one assigned to</AssignableLectern_NoOneAssigned>
+<AssignableLectern_DisabledToAnd>Disabled to {0} and {1}</AssignableLectern_DisabledToAnd>
+<AssignableLectern_DisabledTo>Disabled to {0}</AssignableLectern_DisabledTo>
+<AssignableLectern_Assigned>Assigned</AssignableLectern_Assigned>
+
+<!-- Dialog -->
+  <AssignableLectern_LecternUnassign>Unassign</AssignableLectern_LecternUnassign>
+  <AssignableLectern_LecternAssign>Assign</AssignableLectern_LecternAssign>
+  <AssignableLectern_SkillDisabled>Disabled</AssignableLectern_SkillDisabled>
+
+</LanguageData>

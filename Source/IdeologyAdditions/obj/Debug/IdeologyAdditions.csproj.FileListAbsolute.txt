@@ -1,0 +1,7 @@
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Assemblies/IdeologyAdditions.dll
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Assemblies/IdeologyAdditions.pdb
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Source/IdeologyAdditions/obj/Debug/IdeologyAdditions.csproj.AssemblyReference.cache
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Source/IdeologyAdditions/obj/Debug/IdeologyAdditions.csproj.CoreCompileInputs.cache
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Source/IdeologyAdditions/obj/Debug/IdeologyAdditions.csproj.CopyComplete
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Source/IdeologyAdditions/obj/Debug/IdeologyAdditions.dll
+/Users/ocapraro/Library/Application Support/Steam/steamapps/common/RimWorld/RimWorldMac.app/Mods/IdeologyAdditions/Source/IdeologyAdditions/obj/Debug/IdeologyAdditions.pdb

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>IdeologyAdditions_StartPrayer</defName>
+    <driverClass>IdeologyAdditions.JobDriver_StartPrayer</driverClass>
+    <reportString>praying at TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+</Defs>

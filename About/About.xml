@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Ideology Additions</name> <!-- The name of your mod in the mod list -->
+    <author>Oscar Capraro</author>
+    <supportedVersions> <!-- the version(s) your mod supports -->
+        <li>1.5</li>
+    </supportedVersions>
+    <packageId>ocapraro.ideologyAdditions</packageId> <!-- a unique identifier for your mod. Must contain only a-z and periods, no spaces. -->
+    <description>
+      This mod adds additional functionality to the ideology roles. 
+    </description>
+</ModMetaData>

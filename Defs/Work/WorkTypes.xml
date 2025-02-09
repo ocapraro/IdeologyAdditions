@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorkTypeDef>
+    <defName>IdeologyAdditions_Praying</defName>
+    <labelShort>pray</labelShort>
+    <pawnLabel>Prayer Giver</pawnLabel>
+    <gerundLabel>praying</gerundLabel>
+    <description>Pray to give a mood bost to members of their ideoligion.</description>
+    <verb>Pray</verb>
+    <naturalPriority>305</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <requireCapableColonist>true</requireCapableColonist>
+    <disabledForSlaves>true</disabledForSlaves>
+    <relevantSkills>
+      <li>Social</li>
+    </relevantSkills>
+    <workTags>
+      <li>Social</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+</Defs>
