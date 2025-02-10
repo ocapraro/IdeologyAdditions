@@ -25,4 +25,17 @@
       </li>
     </stages>
   </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>IdeologyAdditions_WitnessedPrayer</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>2</stackLimit>
+    <stages>
+      <li>
+        <label>witnessed prayer</label>
+        <description>I witnessed the conclusion of a prayer.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>

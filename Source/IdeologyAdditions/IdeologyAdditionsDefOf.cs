@@ -11,6 +11,7 @@ namespace IdeologyAdditions
         public static JobDef IdeologyAdditions_StartPrayer;
         public static ThoughtDef IdeologyAdditions_ActivePrayerCaster;
         public static ThoughtDef IdeologyAdditions_ActivePrayer;
+        public static ThoughtDef IdeologyAdditions_WitnessedPrayer;
 
         static IdeologyAdditionsDefOf()
         {

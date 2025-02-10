@@ -15,9 +15,16 @@ namespace IdeologyAdditions
             foreach (Pawn colonist in pawn.Map.mapPawns.FreeColonists)
             {
                 if ((colonist == null || colonist.Dead) || 
-                    (colonist.Equals(pawn) || !colonist.Ideo.Equals(pawn.Ideo))
+                    (colonist.Equals(pawn))
                 ) continue;
-                colonist.needs.mood.thoughts.memories.TryGainMemory(IdeologyAdditionsDefOf.IdeologyAdditions_ActivePrayer);
+                
+                // mood boost for all colonists of the same religion
+                if (colonist.Ideo.Equals(pawn.Ideo))
+                    colonist.needs.mood.thoughts.memories.TryGainMemory(IdeologyAdditionsDefOf.IdeologyAdditions_ActivePrayer);
+                
+                // mood boost for nearby pawns
+                if (pawn.GetRoom().Equals(colonist.GetRoom()))
+                    colonist.needs.mood.thoughts.memories.TryGainMemory(IdeologyAdditionsDefOf.IdeologyAdditions_WitnessedPrayer);
             }
         }
 
