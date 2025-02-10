@@ -33,8 +33,4 @@ namespace IdeologyAdditions
             return true;
         }
     }
-    // TODO:
-    // - [ ] Mood buff from witnessing the end of a prayer
-    // - [ ] Watch prayer recreation type
-    // - [ ] Confession
 }
