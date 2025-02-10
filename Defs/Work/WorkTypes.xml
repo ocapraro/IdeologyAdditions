@@ -3,7 +3,7 @@
   <WorkTypeDef>
     <defName>IdeologyAdditions_Praying</defName>
     <labelShort>pray</labelShort>
-    <pawnLabel>Prayer Giver</pawnLabel>
+    <pawnLabel>Prayer Caster</pawnLabel>
     <gerundLabel>praying</gerundLabel>
     <description>Pray to give a mood bost to members of their ideoligion.</description>
     <verb>Pray</verb>
