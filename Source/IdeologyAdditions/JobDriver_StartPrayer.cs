@@ -10,8 +10,9 @@ namespace IdeologyAdditions
         private const TargetIndex Lectern = TargetIndex.A;
         private const int PrayerDuration = 5000;
 
-        private void AssignMoodBuff()
+        private void AssignMoodBuffs()
         {
+            int prayerWitnesses = 0;
             foreach (Pawn colonist in pawn.Map.mapPawns.FreeColonists)
             {
                 if ((colonist == null || colonist.Dead) || 
@@ -24,13 +25,63 @@ namespace IdeologyAdditions
                 
                 // mood boost for nearby pawns
                 if (pawn.GetRoom().Equals(colonist.GetRoom()))
+                {
                     colonist.needs.mood.thoughts.memories.TryGainMemory(IdeologyAdditionsDefOf.IdeologyAdditions_WitnessedPrayer);
+                    prayerWitnesses++;
+                }
             }
+
+            AssignMoodBuffCaster(prayerWitnesses, pawn);
+        }
+
+        private static void AssignMoodBuffCaster(int witnessCount, Pawn caster)
+        {
+            List<ThoughtDef> moodBuffs = new List<ThoughtDef>
+            {
+                IdeologyAdditionsDefOf.IdeologyAdditions_PrayerCasterNoOne,
+                IdeologyAdditionsDefOf.IdeologyAdditions_PrayerCasterSmallGroup,
+                IdeologyAdditionsDefOf.IdeologyAdditions_PrayerCasterMediumGroup,
+                IdeologyAdditionsDefOf.IdeologyAdditions_PrayerCasterLargeGroup
+            };
+            int memoryIndex;
+            if (witnessCount < 1)
+            {
+                memoryIndex = 0;
+            } 
+            else  if (witnessCount < 4)
+            {
+                memoryIndex = 1;
+            } else if (witnessCount < 11)
+            {
+                memoryIndex = 2;
+            }
+            else
+            {
+                memoryIndex = 3;
+            }
+            Log.Message("Witnesses: " + witnessCount);
+            Log.Message("Mood: " + moodBuffs[memoryIndex]);
+            int curMemoryIndex = -1;
+            List<Thought_Memory> memories = caster.needs.mood.thoughts.memories.Memories;
+            foreach (var memory in memories)
+            {
+                if (!moodBuffs.Contains(memory.def)) continue;
+                curMemoryIndex = moodBuffs.IndexOf(memory.def);
+                break;
+            }
+            Log.Message("Current Mood Index: " + curMemoryIndex);
+            if(curMemoryIndex > memoryIndex) return;
+            for (int i = memoryIndex-1; i >= 0; i--)
+            {
+                caster.needs.mood.thoughts.memories.RemoveMemoriesOfDef(moodBuffs[i]);
+            }
+            Log.Message("Updating Mood");
+            caster.needs.mood.thoughts.memories.TryGainMemory(moodBuffs[memoryIndex]);
         }
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(job.GetTarget(Lectern), job, 1, -1, null);
+            return pawn.Reserve(job.GetTarget(Lectern), job);
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
@@ -48,7 +99,7 @@ namespace IdeologyAdditions
                 ? SoundDefOf.Speech_Leader_Female
                 : SoundDefOf.Speech_Leader_Male;
             
-            Toil buffMood = Toils_General.Do(AssignMoodBuff);
+            Toil buffMood = Toils_General.Do(AssignMoodBuffs);
             
             // wait until the prayer is over
             Toil pray = Toils_General

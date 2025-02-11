@@ -73,7 +73,6 @@
         <Compile Include="IdeologyAdditionsDefOf.cs" />
         <Compile Include="MapComponent_DisableJobs.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="ThoughtWorker_ActivePrayerCaster.cs" />
         <Compile Include="WorkGiver_Praying_Pray.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>

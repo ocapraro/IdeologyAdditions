@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+<!-- Prayer Caster -->
+<!-- 0 -->
   <ThoughtDef>
-    <defName>IdeologyAdditions_ActivePrayerCaster</defName>
-    <thoughtClass>Thought_Situational</thoughtClass>
-    <workerClass>IdeologyAdditions.ThoughtWorker_ActivePrayerCaster</workerClass>
+    <defName>IdeologyAdditions_PrayerCasterNoOne</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
     <stages>
       <li>
-        <label>praying for someone</label>
-        <description>I am engaging in payer.</description>
+        <label>prayed to an empty room</label>
+        <description>No one witnessed my prayer.</description>
+        <baseMoodEffect>-0.1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- 1-3 -->
+  <ThoughtDef>
+    <defName>IdeologyAdditions_PrayerCasterSmallGroup</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>prayed for a small gathering</label>
+        <description>A few people watched me pray. It was nice.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- 4-10 -->
+  <ThoughtDef>
+    <defName>IdeologyAdditions_PrayerCasterMediumGroup</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>prayed for a decent sized gathering</label>
+        <description>A lot of people watched me pray. It was nice.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!-- 11+ -->
+  <ThoughtDef>
+    <defName>IdeologyAdditions_PrayerCasterLargeGroup</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>prayed for a large gathering</label>
+        <description>A HUGE group of people watched me pray. Am I famous now?</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
   
+<!-- Prayed For -->
   <ThoughtDef>
     <defName>IdeologyAdditions_ActivePrayer</defName>
     <durationDays>1</durationDays>
@@ -26,6 +72,7 @@
     </stages>
   </ThoughtDef>
 
+<!-- Witnessed Prayer -->
   <ThoughtDef>
     <defName>IdeologyAdditions_WitnessedPrayer</defName>
     <durationDays>1</durationDays>
