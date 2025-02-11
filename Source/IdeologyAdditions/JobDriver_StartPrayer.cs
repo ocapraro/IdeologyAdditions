@@ -59,8 +59,6 @@ namespace IdeologyAdditions
             {
                 memoryIndex = 3;
             }
-            Log.Message("Witnesses: " + witnessCount);
-            Log.Message("Mood: " + moodBuffs[memoryIndex]);
             int curMemoryIndex = -1;
             List<Thought_Memory> memories = caster.needs.mood.thoughts.memories.Memories;
             foreach (var memory in memories)
@@ -69,13 +67,11 @@ namespace IdeologyAdditions
                 curMemoryIndex = moodBuffs.IndexOf(memory.def);
                 break;
             }
-            Log.Message("Current Mood Index: " + curMemoryIndex);
             if(curMemoryIndex > memoryIndex) return;
             for (int i = memoryIndex-1; i >= 0; i--)
             {
                 caster.needs.mood.thoughts.memories.RemoveMemoriesOfDef(moodBuffs[i]);
             }
-            Log.Message("Updating Mood");
             caster.needs.mood.thoughts.memories.TryGainMemory(moodBuffs[memoryIndex]);
         }
 
