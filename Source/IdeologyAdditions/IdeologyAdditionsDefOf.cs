@@ -9,6 +9,7 @@ namespace IdeologyAdditions
         public static WorkGiverDef IdeologyAdditions_Pray;
         public static WorkTypeDef IdeologyAdditions_Praying;
         public static JobDef IdeologyAdditions_StartPrayer;
+        public static JobDef IdeologyAdditions_WitnessPrayer;
         public static ThoughtDef IdeologyAdditions_PrayerCasterNoOne;
         public static ThoughtDef IdeologyAdditions_PrayerCasterSmallGroup;
         public static ThoughtDef IdeologyAdditions_PrayerCasterMediumGroup;

@@ -71,9 +71,11 @@
         <Compile Include="JobDriver_StartPrayer.cs" />
         <Compile Include="IdeologyAdditions.cs" />
         <Compile Include="IdeologyAdditionsDefOf.cs" />
+        <Compile Include="JobDriver_WitnessPrayer.cs" />
         <Compile Include="MapComponent_DisableJobs.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
         <Compile Include="WorkGiver_Praying_Pray.cs" />
+        <Compile Include="JoyGiver_WitnessPrayer.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

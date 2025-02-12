@@ -15,6 +15,20 @@ namespace IdeologyAdditions
         {
             return pawn.Ideo.GetRole(pawn) != null && pawn.Ideo.GetRole(pawn).def.Equals(PreceptDefOf.IdeoRole_Moralist);
         }
+        
+        /// <summary>
+        /// Checks to see if the pawn is praying.
+        /// </summary>
+        public static bool PawnPraying(Pawn pawn)
+        {
+            return !(
+                pawn == null ||
+                pawn.Dead ||
+                pawn.Map == null ||
+                pawn.CurJob == null ||
+                !pawn.CurJob.def.Equals(IdeologyAdditionsDefOf.IdeologyAdditions_StartPrayer)
+            );
+        }
 
         /// <summary>
         /// Checks to see if the pawn can start a prayer at the lectern.

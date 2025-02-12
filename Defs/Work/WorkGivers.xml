@@ -13,4 +13,13 @@
       <li>Talking</li>
     </requiredCapacities>
   </WorkGiverDef>
+
+  <JoyGiverDef>
+    <defName>IdeologyAdditions_WitnessPrayerGiver</defName>
+    <giverClass>IdeologyAdditions.JoyGiver_WitnessPrayer</giverClass>
+    <baseChance>1</baseChance>
+    <joyKind>Social</joyKind>
+    <canDoWhileInBed>false</canDoWhileInBed>
+    <jobDef>IdeologyAdditions_WitnessPrayer</jobDef>
+  </JoyGiverDef>
 </Defs>
