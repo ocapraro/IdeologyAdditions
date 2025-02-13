@@ -12,7 +12,8 @@ Moralists can pray at a lectern providing themselves a moodboost while praying, 
   - [X] Only assign moralists to praying.
   - [X] Mood buff from witnessing the end of a prayer.
   - [X] Refactor prayer caster mood to be based on the people listening.
-  - [X] Watch prayer recreation type.
+  - [X] Watch prayer recreation job.
+  - [X] Add Spiritual recreation type.
 ### Confession
 - [ ] Make Confession Booth.
 - [ ] Take confession job.
